@@ -12,6 +12,26 @@ code {
     monospace;
 }
 
+card {
+
+  width: 200px;
+  height: 200px;
+  display: flex;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 18px #888888;
+  flex: 1;
+  /* Makes each column take up equal width */
+  margin: 10px;
+  /* Optional: Adds spacing between the columns */
+  padding: 20px;
+  background-color: red;
+  /* Just for visualization */
+  text-align: center;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -20,6 +40,7 @@ ul {
 li {
   margin: 10px 0;
 }
+
 
 .pagination {
   display: flex;
@@ -41,4 +62,27 @@ li {
 
 .page-link:hover {
   background-color: #f0f0f0;
+}
+
+.card {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-body {
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid;
+  padding: 10px;
+  box-shadow: 5px 10px 18px #888888;
+  flex: 1;
+  /* Makes each column take up equal width */
+  margin: 10px;
+  /* Optional: Adds spacing between the columns */
+  padding: 20px;
+  background-color: lightgray;
+  /* Just for visualization */
+  text-align: center;
 }

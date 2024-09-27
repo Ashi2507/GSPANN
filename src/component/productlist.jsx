@@ -27,15 +27,15 @@ const ProductList = () => {
   return (
     <div>
       <h1>Products</h1>
-      <ul>
+      <div class="card">
         {currentProducts.map(product => (
-          <li key={product.id}>
-            <img src={product.image} alt={product.title} width="50" height="50" />
+          <div class="card-body" key={product.id}>
+            <img src={product.image} alt={product.title} width="250" height="200" />
             <p>{product.title}</p>
             <p>${product.price}</p>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
       <Pagination
         productsPerPage={productsPerPage}
         totalProducts={products.length}
